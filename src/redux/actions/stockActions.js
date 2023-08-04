@@ -35,7 +35,7 @@ export const fetchAllStocks = (page = 1, limit = 10) => {
     return (dispatch) => {
         dispatch(fetchStocksRequest());
         axios
-            .get('https://cloud.iexapis.com/stable/stock/aapl/quote?token=pk_2ffdbf5dbe184f31a6fcf557afe2fec1')
+            .get('https://cloud.iexapis.com/stable/stock/aapl/quote?token=YOUR_TOKEN')
             .then((response) => {
                 const stock = response.data;
 
